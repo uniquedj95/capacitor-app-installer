@@ -1,10 +1,9 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { CapacitorAppInstallerPlugin } from './definitions';
+import type { AppInstallOptions, CapacitorAppInstallerPlugin } from './definitions';
 
 export class CapacitorAppInstallerWeb extends WebPlugin implements CapacitorAppInstallerPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  async install(options: AppInstallOptions): Promise<void> {
+    console.log('INSTALLING', options);
   }
 }
