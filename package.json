@@ -1,6 +1,6 @@
 {
   "name": "capacitor-app-installer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CapacitorAppInstaller Capacitor Plugin",
   "type": "module",
   "main": "dist/plugin.cjs.js",
